@@ -1,0 +1,8 @@
+name: Check if there is conflicts and send mail
+on: pull_request
+jobs:
+  check_PR:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check the conflicts
+        run: echo ${ github }
